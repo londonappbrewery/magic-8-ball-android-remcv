@@ -19,7 +19,7 @@
         android:layout_height="200sp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/slogan_textView"
             android:layout_width="match_parent"
             android:layout_height="40sp"
             android:layout_centerHorizontal="true"
