@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        ballDisplay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Random myRandomNumberGenerator = new Random();
+                int index;
 
+                index = myRandomNumberGenerator.nextInt(5);
+                ballDisplay.setImageResource(ballArray[index]);
+            }
+        });
     }
 }
