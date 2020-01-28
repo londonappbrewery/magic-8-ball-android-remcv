@@ -1,13 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
     android:paddingBottom="16dp"
+    android:background="#8FBC8F"
     tools:context=".MainActivity">
-</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#F9D500"
+            android:gravity="center"
+            android:text="@string/phrase"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_eightBall"
+            android:layout_width="match_parent"
+            android:layout_height="350sp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ball1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/askButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35sp"
+                android:background="#3f51b5"
+                android:text="@string/button_name"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35sp"
+                android:background="#3f51b5"
+                android:text="@string/reset_button_name"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
